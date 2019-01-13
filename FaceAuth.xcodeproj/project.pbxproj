@@ -11,10 +11,10 @@
 		C11D71A421EBA531002A8B24 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11D71A321EBA531002A8B24 /* Alamofire.framework */; };
 		C11D71A621EBAC02002A8B24 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11D71A521EBAC02002A8B24 /* SwiftyJSON.framework */; };
 		C11D71A821EBAF92002A8B24 /* FaceRecognitionServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D71A721EBAF92002A8B24 /* FaceRecognitionServer.swift */; };
+		C11D71AA21EBD7EC002A8B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11D71A921EBD7EC002A8B24 /* Assets.xcassets */; };
 		C1FCCC8A21EBA43B0041A797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FCCC8921EBA43B0041A797 /* AppDelegate.swift */; };
 		C1FCCC8C21EBA43B0041A797 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FCCC8B21EBA43B0041A797 /* ViewController.swift */; };
 		C1FCCC8F21EBA43B0041A797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FCCC8D21EBA43B0041A797 /* Main.storyboard */; };
-		C1FCCC9121EBA43D0041A797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FCCC9021EBA43D0041A797 /* Assets.xcassets */; };
 		C1FCCC9421EBA43D0041A797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FCCC9221EBA43D0041A797 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +24,11 @@
 		C11D71A321EBA531002A8B24 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11D71A521EBAC02002A8B24 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11D71A721EBAF92002A8B24 /* FaceRecognitionServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecognitionServer.swift; sourceTree = "<group>"; };
+		C11D71A921EBD7EC002A8B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1FCCC8621EBA43B0041A797 /* FaceAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FCCC8921EBA43B0041A797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1FCCC8B21EBA43B0041A797 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1FCCC8E21EBA43B0041A797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C1FCCC9021EBA43D0041A797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1FCCC9321EBA43D0041A797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1FCCC9521EBA43D0041A797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA8F8A540904FDDE8B3D0A2C /* Pods-FaceAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceAuth/Pods-FaceAuth.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 				C1FCCC8B21EBA43B0041A797 /* ViewController.swift */,
 				C11D71A721EBAF92002A8B24 /* FaceRecognitionServer.swift */,
 				C1FCCC8D21EBA43B0041A797 /* Main.storyboard */,
-				C1FCCC9021EBA43D0041A797 /* Assets.xcassets */,
 				C1FCCC9221EBA43D0041A797 /* LaunchScreen.storyboard */,
+				C11D71A921EBD7EC002A8B24 /* Assets.xcassets */,
 				C1FCCC9521EBA43D0041A797 /* Info.plist */,
 			);
 			path = FaceAuth;
@@ -160,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FCCC9421EBA43D0041A797 /* LaunchScreen.storyboard in Resources */,
-				C1FCCC9121EBA43D0041A797 /* Assets.xcassets in Resources */,
+				C11D71AA21EBD7EC002A8B24 /* Assets.xcassets in Resources */,
 				C1FCCC8F21EBA43B0041A797 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

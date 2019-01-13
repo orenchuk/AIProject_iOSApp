@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let recServ = FaceRecognitionServer()
+    let recognizer = FaceRecognitionServer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let image = #imageLiteral(resourceName: "Taras")
-        recServ.detect(image)
+        let image = #imageLiteral(resourceName: "Zhenia1")
+        recognizer.detect(image: image)
     }
 
 }
