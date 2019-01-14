@@ -15,7 +15,7 @@ class FaceRecognitionServer {
     private let urlDetect = "http://127.0.0.1:5000/api/detect"
     private let urlTrain = "http://127.0.0.1:5000/api/add-person"
     
-    func detect(image: UIImage) {
+    func detect(image: UIImage, completionHandler: @escaping (String?, Error?) -> ()) {
         
         guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
         
@@ -30,15 +30,17 @@ class FaceRecognitionServer {
                 case .success(let upload, _, _):
                     upload.responseJSON { response in
                         if let value = response.result.value {
-                            // TO-DO: make return name
-                            print(JSON(value))  // JSON parsing action
+                            let json = JSON(value)
+                            let result = json["result"].stringValue
+                            completionHandler(result, nil)
                         }
                     }
                 case .failure(let error):
                     print(error)
+                    completionHandler(nil, error)
                 }
-        })
-        
+            }
+        )
     }
     
     func train(title: String, images: [UIImage]) {
@@ -62,8 +64,7 @@ class FaceRecognitionServer {
                 case .success(let upload, _, _):
                     upload.responseJSON { response in
                         if let value = response.result.value {
-                            // TO-DO: make return name
-                            print(JSON(value))  // JSON parsing action
+                            print(JSON(value))
                         }
                     }
                 case .failure(let error):
