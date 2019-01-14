@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class FaceRecognitionServer {
     
+//    private let urlDetect = "http://OrenchukMacBookPro-2.local:5000/api/detect"
     private let urlDetect = "http://127.0.0.1:5000/api/detect"
     private let urlTrain = "http://127.0.0.1:5000/api/add-person"
     
@@ -32,6 +33,7 @@ class FaceRecognitionServer {
                         if let value = response.result.value {
                             let json = JSON(value)
                             let result = json["result"].stringValue
+                            print(result)
                             completionHandler(result, nil)
                         }
                     }

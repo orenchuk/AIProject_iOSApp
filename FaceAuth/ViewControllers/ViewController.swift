@@ -9,19 +9,10 @@
 import UIKit
 
 class ViewController: UITabBarController {
-    
-    let recognizer = FaceRecognitionServer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let image = #imageLiteral(resourceName: "predict")
-        recognizer.detect(image: image) { (result, error) in
-            if let name = result {
-                print(name)
-            }
-        }
-        
     }
 
 }
